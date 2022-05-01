@@ -1,1 +1,1 @@
-web: node index.js
+web: knex migrate:roolback && knex migrate:latest && node index.js

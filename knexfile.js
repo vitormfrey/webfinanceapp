@@ -11,10 +11,22 @@ module.exports = {
       user: "postgres",
       password: "teste",
     },
+    migrations: {
+      directory: __dirname + "/database/migrations",
+    },
+    seed: {
+      directory: __dirname + "/database/seeds",
+    },
   },
 
   production: {
     client: "postgresql",
     connection: process.env.DATABASE_URL,
+    migrations: {
+      directory: __dirname + "/database/migrations",
+    },
+    seed: {
+      directory: __dirname + "/database/seeds",
+    },
   },
 };
