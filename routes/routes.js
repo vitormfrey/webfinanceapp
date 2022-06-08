@@ -9,8 +9,8 @@ router.post("/api/createUser", UserController.CreateUser);
 router.put("/api/updateUser", UserController.UpdateUser);
 router.delete("/api/deleteUser", UserController.DeleteUser);
 //Account routes
-router.post("/api/createAccount", AccountController.CreateAccount);
 router.get("/api/getAccount", AccountController.GetAccount);
+router.post("/api/createAccount", AccountController.CreateAccount);
 router.put("/api/inactivateAccount", AccountController.InactivateAccount);
 
 module.exports = router;
